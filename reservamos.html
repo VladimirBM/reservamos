@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservamos | Tu viaje</title>
+
+    <link rel="stylesheet" href="reservamos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="images/Reservamos logo.svg" alt="logotipo reservamos">
+                </div>
+                <div class="header__whatsapp">
+                    <p>¿Necesitas algo?</p>
+                    <div class="header__whatsapp--button">
+                        <img src="images/Whatsapp.svg" alt="icono Whatsapp">
+                        <span>WhatsApp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Tu viaje</h2>
+            <div class="card__buscar">
+                <img src="images/Info.svg" alt="icono info" class="info--absolute">
+                <div class="card__viaje">
+                    <div class="card__viaje--redondo active">
+                        <p>Redondo</p>
+                    </div>
+                    <div class="card__viaje--sencillo">
+                        <p>Sencillo</p>
+                    </div>
+                </div>
+                <form action="post">
+                    <div class="formgroup">
+                        <label for="origen">Origen</label>
+                        <input type="text" name="origen" id="origen" placeholder="Ciudad de México">
+                        <label for="destino">Destino</label>
+                        <input type="text" name="destino" id="destino" placeholder="Santiago de Queretaro">
+                    </div>
+                    <div class="formgroup">
+                        <label for="salida">Fecha de salida</label>
+                        <input type="text" name="salida" id="salida" placeholder="Lunes 13 septiembre 2021">
+                        <label for="regreso">Fecha de regreso</label>
+                        <input type="text" name="regreso" id="regreso" placeholder="Jueves 17 septiembre 2021">
+                    </div>
+                    <div class="formgroup">
+                        <label for="personas">Personas</label>
+                        <input type="text" name="personas" id="personas" placeholder="2 personas">
+                    </div>
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+            <h2>Resultados</h2>
+            <div class="ordenar">
+                <h3>Ordernar por:</h3>
+                <select name="ordenar" id="ordenar">
+                    <option value="precio" selected>Precio</option>
+                    <option value="linea">línea</option>
+                    <option value="duracion">Duración</option>
+                    <option value="salida">Salida</option>
+                </select>
+            </div>
+            <div class="card__resultados">
+                <div class="ida">
+                    <div class="card__salida">
+                        <img src="images/Bus right.svg" alt="">
+                        <span>IDA</span>
+                    </div>
+                    <div class="card__fecha">
+                        <p>Lunes 13 sep 2021</p>
+                    </div>
+                </div>
+                <div class="card__ruta">
+                    <div class="card__ruta--salida">
+                        <p class="card--title">CDMX</p>
+                        <p class="card--subtitle">Ciudad de México</p>
+                    </div>
+                    <div class="card__ruta--llegada">
+                        <p class="card--title">QRO</p>
+                        <p class="card--subtitle">Santiago de Querétaro</p>
+                    </div>
+                </div>
+                <div class="card__linea">
+                    <img src="images/logo_PP 2.png" alt="logotipo Primera Plus">
+                    <div class="card__linea--estrellas">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                    </div>
+                </div>
+                <div class="card__horario">
+                    <div class="card__horario--salida">
+                        <div class="card__salida--title">
+                            <img src="images/Arrow right.svg" alt="icono derecha">
+                            <p>Salida</p>
+                        </div>
+                        <p class="subtitle">2:00 P.M.</p>
+                        <p class="subtitle">Terminal 7</p>
+                    </div>
+                    <div class="card__horario--salida">
+                        <div class="card__salida--title">
+                            <img src="images/Arrow right.svg" alt="icono derecha">
+                            <p>Llegada</p>
+                        </div>
+                        <p class="subtitle">10:00 P.M.</p>
+                        <p class="subtitle">Terminal 2</p>
+                    </div>
+                    <div class="card__duracion">
+                        <img src="images/Time.svg" alt="icono tiempo">
+                        <p>Duración:</p>
+                        <p class="subtitle">4h 15m</p>
+                    </div>
+                </div>
+                <div class="ida">
+                    <div class="card__salida">
+                        <img src="images/Bus left.svg" alt="">
+                        <span>REGRESO</span>
+                    </div>
+                    <div class="card__fecha">
+                        <p>Jueves 17 sep 2021</p>
+                    </div>
+                </div>
+                <div class="card__ruta">
+                    <div class="card__ruta--salida">
+                        <p class="card--title">QRO</p>
+                        <p class="card--subtitle">Santiago de Querétaro</p>
+                    </div>
+                    <div class="card__ruta--llegada">
+                        <p class="card--title">CDMX</p>
+                        <p class="card--subtitle">Ciudad de México</p>
+                    </div>
+                </div>
+                <div class="card__linea">
+                    <img src="images/logo_PP 2.png" alt="logotipo Primera Plus">
+                    <div class="card__linea--estrellas">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                        <img src="images/Time.svg" alt="Icono estrella">
+                    </div>
+                </div>
+                <div class="card__horario">
+                    <div class="card__horario--salida">
+                        <div class="card__salida--title">
+                            <img src="images/Arrow right.svg" alt="icono derecha">
+                            <p>Salida</p>
+                        </div>
+                        <p class="subtitle">10:00 A.M.</p>
+                        <p class="subtitle">Terminal 1</p>
+                    </div>
+                    <div class="card__horario--salida">
+                        <div class="card__salida--title">
+                            <img src="images/Arrow right.svg" alt="icono derecha">
+                            <p>Llegada</p>
+                        </div>
+                        <p class="subtitle">2:00 P.M.</p>
+                        <p class="subtitle">Terminal 4</p>
+                    </div>
+                    <div class="card__duracion">
+                        <img src="images/Time.svg" alt="icono tiempo">
+                        <p>4h 30m</p>
+                    </div>
+                </div>
+                <div class="servicios">
+                    <h3>Servicios</h3>
+                    <picture>
+                        <img src="images/Wifi.svg" alt="icono servicios">
+                        <img src="images/USB Charge.svg" alt="icono USB">
+                        <img src="images/TV.svg" alt="icono TV">
+                        <img src="images/Cold.svg" alt="imagen A/C">
+                    </picture>
+                    <div class="servicios__asientos">
+                        <img src="images/Seat.svg" alt="icono asientos">
+                        <span>Asientos</span>
+                        <p>18/42</p>
+                    </div>
+                </div>
+                <div class="precio">
+                    <img src="images/Info.svg" alt="icono info">
+                    <p class="precio--title">Precio total</p>
+                    <p class="precio--precio"><span>$MXN</span>5,463</p>
+                    <button>Seleccionar</button>
+                </div>
+            </div>              
+        </div>
+    </main>
+</body>
+</html>
